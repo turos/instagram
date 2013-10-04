@@ -1,0 +1,74 @@
+<!DOCTYPE html5>
+<html lang="en">
+<head>
+	<title>Tue's GramGrabber</title>
+	<!-- BOOTSTRAP CSS-->
+	<link href="css/bootstrap.css" rel="stylesheet">
+
+	<!-- OWN CSS -->
+	<style> 
+		body{
+			background-image: url('pics/binding_light.png'); /* brickwall */
+		}
+		.jumbotron{
+			/*border: 2px solid black;*/
+			margin-top: 20px;
+
+		}
+
+		.myPictures{
+			border: 2px solid black;
+			margin: 10pt;
+			max-width:400px;
+			/*max-height: auto;*/
+		}
+
+		.mySmallPictures{
+			/*border: 2px dotted black;*/
+			max-width: 80px;
+
+		}
+
+
+
+		
+	</style>
+
+	<!-- JQUERY -->
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/task.js"></script>
+	
+</head>
+<body>
+
+<div class="container">
+
+	<div class="jumbotron">
+		<form id="myForm" class="form-inline" role="form" name="searchfield">
+		<div class="page-header"><h1>What are you looking for, big guy?<small> You can tell me. </small> </h1></div>
+		
+		<input type="text" name="searchterm" id="searchterm" value="#">
+		<img id="ajaxloader" src="pics/ajax-loader.gif" style="display:none;">
+		<br /> 
+		<button type="submit" id="myButton" class="btn btn-default" value="Submit">Submit</button>
+
+
+	</form>
+
+	</div>
+
+
+
+<div id="instagramPics">
+
+	<!-- PUT ALL THE INSTAGRAM PICTURES HERE -->
+</div>
+
+
+
+</div>
+
+<script src="js/bootstrap.min.js"></script>
+
+</body>
+</html>
